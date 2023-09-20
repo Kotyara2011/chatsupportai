@@ -1,0 +1,39 @@
+{
+    "intents": [
+        {
+            "name": "greeting",
+            "inputs": [
+                "hello",
+                "hi",
+                "good day",
+                "hey",
+                "greetings"
+            ],
+            "responses": [
+                "Hello, welcome to our site. How can I help you?",
+                "Hi there, thank you for visiting our site. What can I do for you?",
+                "Good day, I am glad to see you here. How may I assist you?",
+                "Hey, nice to meet you. What are you looking for?",
+                "Greetings, I am your friendly chatbot. How can I serve you?"
+            ]
+        },
+        {
+            "name": "product",
+            "inputs": [
+                "what do you offer?",
+                "tell me more about your product",
+                "what is your product?",
+                "how does your product work?",
+                "what can your product do?"
+            ],
+            "responses": [
+                "We offer a great product that can help you with your problem. Would you like to see a demo?",
+                "Our product is a solution that can make your life easier. Do you want to learn more?",
+                "Our product is a unique and innovative way to solve your challenge. Are you interested in seeing how it works?",
+                "Our product is a powerful and user-friendly tool that can help you achieve your goals. Do you want to try it out?",
+                "Our product is a smart and effective way to improve your situation. Are you curious about its features?"
+            ],
+            "action": "show_product"
+        }
+    ]
+}

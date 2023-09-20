@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Load the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Create a container for the landing page content -->
+    <div class="container">
+        <!-- Create a jumbotron to display the site's title and slogan -->
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to our site!</h1>
+            <p class="lead">We offer a great product that can help you with your problem.</p>
+            <hr class="my-4">
+            <!-- Create a button to redirect the user to the product page -->
+            <a class="btn btn-primary btn-lg" href="/product" role="button">Learn more</a>
+        </div>
+        <!-- Create a row to display the chatbot widget -->
+        <div class="row">
+            <!-- Create a column to align the chatbot widget to the right -->
+            <div class="col-md-8 offset-md-4">
+                <!-- Create a card to contain the chatbot widget -->
+                <div class="card">
+                    <!-- Create a card header to display the chatbot's name and icon -->
+                    <div class="card-header">
+                        <h5 class="card-title">Chat with our bot</h5>
+                        <img src="/static/img/bot.png" alt="bot" width="32" height="32">
+                    </div>
+                    <!-- Create a card body to display the chatbot's messages and input field -->
+                    <div class="card-body" id="chatbot-body">
+                        <!-- Create a div to display the chatbot's welcome message -->
+                        <div class="alert alert-info" role="alert">
+                            Hello, I am your friendly chatbot. I can answer your questions and guide you through our site. How can I help you?
+                        </div>
+                        <!-- Create a form to handle the user's input -->
+                        <form id="chatbot-form">
+                            <!-- Create an input group to display the user's input field and send button -->
+                            <div class="input-group mb-3">
+                                <!-- Create an input field for the user to type their message -->
+                                <input type="text" class="form-control" id="user-input" placeholder="Type your message here..." required>
+                                <!-- Create an input group append to display the send button -->
+                                <div class="input-group-append">
+                                    <!-- Create a button to submit the user's message -->
+                                    <button type="submit" class="btn btn-primary" id="send-button">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load the jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Load the chatbot.js file -->
+    <script src="/static/js/chatbot.js"></script>
+</body>
+</html>
